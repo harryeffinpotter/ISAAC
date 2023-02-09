@@ -14,7 +14,9 @@ If you are trying to copy from a Shared/Team drive to a personal drive or vice v
 4. Set the app to EXTERNAL, enter your email in the required fields and click next. 
 5. DO NOT CONFIGURE ANY SCOPES, instead just keep clicking next til you are finished. Once you have done this you will see a button that says PUBLISH YOUR APP in the Oauth Consent Screen section, click it to publish your app.
 6. Enable each of the APIs in this image for your app - 
-[image](https://user-images.githubusercontent.com/73411256/217772800-2557cf53-7842-4833-bc30-82fe49af037f.png)
+
+![image](https://user-images.githubusercontent.com/73411256/217772800-2557cf53-7842-4833-bc30-82fe49af037f.png)
+
 7. nside your WSL/Bash terminal run the following command, ensuring that your Google Chrome window where you configured your app is the last google chrome windows you have clicked on.
 8. Run the master script by entering the following command: `./__RUNMEFROMTHISFOLDER.sh`
 9. Follow the on screen prompts.
