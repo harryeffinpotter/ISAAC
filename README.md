@@ -1,7 +1,7 @@
 # ISAAC
 ## Instant Service Account Automator &amp; Configurator
 
-Service Accounts are useful for those of us who wish to copy large amounts of data among/between Google Team/Shared drives. They will bypass the 750GB a day upload limit that is imposed upon all Google Drive accounts. Once this script is completed you can use any simple bash script along with the most recent version of the official RCLONE client to preform your drive to drive operations. Since you can utilize server to server transfers you will see very fast transfer speeds (I have seen over 5 GB/s so far!)
+Service Accounts are useful for those of us who wish to copy large amounts of data among/between Google Team/Shared drives. They will bypass the 750GB a day upload limit that is imposed upon all Google Drive accounts. Once this script is completed you can use any simple bash script along with the most recent version of the official RCLONE client to preform your drive to drive operations. Since you can utilize server to server transfers you will see very fast transfer speeds (I have seen over 5 GB/s so far!).
 
 If you are trying to copy from a Shared/Team drive to a personal drive or vice versa this is not a good solution due to the fact that these service accounts can only carry up to 15GB of data each. However, when copying among Shared/Team drives since the storage never has to go to the SA's personal storage this will allow you to copy/transfer up to 75TB a day!
 
