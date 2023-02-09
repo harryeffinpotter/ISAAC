@@ -9,8 +9,10 @@ If you are trying to copy from a Shared/Team drive to a personal drive or vice v
 
 1. Create a google group of which you are the OWNER.
 2. Create an app in the Google Cloud Console at this link - https://console.cloud.google.com/
-3. Once you have created an app and have it selected click the hamburger menu in the top left and select Oauth Consent Screen under the APIS and Services item in the left menu. 
+3. Once you have created an app and have it selected click the hamburger menu in the top left and select Oauth Consent Screen under the APIS and Services item in the left menu -
+
 ![image](https://user-images.githubusercontent.com/73411256/217771975-1256a77d-0e4e-4102-9912-3f07455aa9d2.png)
+
 4. Set the app to EXTERNAL, enter your email in the required fields and click next. 
 5. DO NOT CONFIGURE ANY SCOPES, instead just keep clicking next til you are finished. Once you have done this you will see a button that says PUBLISH YOUR APP in the Oauth Consent Screen section, click it to publish your app.
 6. Enable each of the APIs in this image for your app - 
