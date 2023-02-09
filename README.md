@@ -24,7 +24,9 @@ If you are trying to copy from a Shared/Team drive to a personal drive or vice v
 9. Follow the on screen prompts.
 
 Here is a video of me completing the majority of the process:
+
 https://gfycat.com/IdealisticAgonizingArgentinehornedfrog
+
 [Note: due to this being uploaded to GFYCat you have to click on the button labeled SD to switch it to HD quality otherwise it will be mostly illegible.]
 
 P.S. I will be adding an example config & my uploading scripts that automatically iterate through the 100 Service Accounts within the coming days.
