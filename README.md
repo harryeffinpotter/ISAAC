@@ -20,7 +20,10 @@ If you are trying to copy from a Shared/Team drive to a personal drive or vice v
 ![image](https://user-images.githubusercontent.com/73411256/217772800-2557cf53-7842-4833-bc30-82fe49af037f.png)
 
 7. Inside your WSL/Bash terminal run the following command, ensuring that your Google Chrome window where you configured your app is the last google chrome windows you have clicked on.
-8. Run the master script by entering the following command: `./__RUNMEFROMTHISFOLDER.sh`
+
+8. Launch the script with  `./__RUNMEFROMTHISFOLDER.sh`
+(If you're running the script for the first time run this command first beforehand: `chmod a+x `./__RUNMEFROMTHISFOLDER.sh`)
+
 9. Follow the on screen prompts.
 
 Here is a video of me completing the majority of the process:
