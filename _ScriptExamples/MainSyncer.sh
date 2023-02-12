@@ -2,7 +2,7 @@
 
 # ^ ^ ^ Having issues? Change "#!/bin/bash" to "#!/bin/bash -x" for an extremely verbose script output!
 
-# Set common paths, you don't have to edit this, but you can if you need to! All of the mare required for smooth operation.
+# Set common paths, you don't have to edit this, but you can if you need to! All of them are required for smooth operation.
 LOGDIR="./_logs"
 mkdir "$LOGDIR" 2>/dev/null
 SIMPLELOG="$LOGDIR/Summary.log"
@@ -48,7 +48,7 @@ source "$CONFIGFILE"
 if [[ "$StartFromLocal" == "0" || -z "$StartingSource" ]]; then
 	continue;
 else
-	# Store the mirror numbers from config into a temporary array for dribe to Mirror usage.
+	# Store the mirror numbers from config into a temporary array for drive to Mirror usage.
 	mirrorsInProg=( "${MirrorNames[@]}" )
 	MirrorsToGo=( "${MirrorNames[@]}" )
 	for mirror in "${mirrorsInProg[@]}"
