@@ -1,5 +1,6 @@
 # ISAAC
 ## Instant Service Account Adder &amp; Configurator
+### Updated main setup script to automatically rename client_* json in directory to credentials json, and also it will now ask you to enter a specific app if you have more than one!
 
 Service Accounts are useful for those of us who wish to copy large amounts of data among/between Google Team/Shared drives. They will bypass the 750GB a day upload limit that is imposed upon all Google Drive accounts. Once this script is completed you can use any simple bash script along with the most recent version of the official RCLONE client to preform your drive to drive operations. Since you can utilize server to server transfers you will see very fast transfer speeds (I have seen over 5 GB/s so far!).
 
