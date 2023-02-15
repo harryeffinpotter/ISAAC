@@ -1,10 +1,10 @@
 @echo off
 CLS
 TITLE ISAAC - Instant Service Account Adder ^& Configurator - Windows Edition
-echo WARNING 1: do NOT run this on your server if it is not on your local network. Unless you can  run it in a GUI on your server^!
-echo WARNING 2: THIS WILL DELETE ALL SA's CURRENTLY ON YOUR APP SINCE ITS NOT POSSIBLE TO ADD MORE THAN 100 VIA CSV^!
-echo IF YOU HAVE OVER 100 SAs already that you plan to keep, exit now
-timeout /t 6 /nobreak
+echo WARNING: do NOT run this on your headless server ^!
+echo Make sure you have your oauth json saved to directory before proceeding (it doesnt have to be named credentials.json, it will be auto renamed if it starts with "client")
+echo. 
+pause
 del backup /s /q >> SetupLog.txt
 winget install -e --id Python.Python.3.10
 set PATH=%PATH%;%USERPROFILE%\AppData\Local\Programs\Python\Python310\Scripts;%USERPROFILE%\AppData\Local\Programs\Python\Python310
@@ -49,6 +49,9 @@ echo Next you must confirm authorization of the SA account generation script, co
 echo.
 echo.
 "%USERPROFILE%\AppData\Local\Programs\Python\Python310\python.exe" gen_sa_accounts.py 
+echo. 
+echo.
+
 :START
 set /a COUNT=0
 setlocal EnableDelayedExpansion
@@ -64,7 +67,7 @@ set /a RESULT=COUNT-1
 call set CHOICE!RESULT!=%%F
 )
 )
-if "%COUNT%"=="2" (echo Project selected^: %PROJID% & goto :ProjectIDChosen ) else (
+if "%COUNT%"=="2" (echo. & echo Only project automatically selected^: %PROJID% & echo. & timeout /t 5 & goto :ProjectIDChosen ) else (
 :CHOOSENUM
 echo.
 echo Which project are you trying to add SA's to? Pick the matching number.
@@ -78,6 +81,7 @@ set PROJID=!CHOICE%chosen%!
 set "PROJID=!CHOICE%chosen%!"
 
 :isokay
+echo.
 echo You chose: %PROJID%
 echo.
 echo Is that OK[Y/N]?
@@ -90,6 +94,20 @@ echo Incorrect answer given... & timeout /t 5 & goto :isokay
 
 
 :ProjectIDChosen
+:DeleteSas
+cls
+echo Would you like to delete previous Service Accounts on this account (i.e. you have lost the files)[Y/N]?
+set /p delsas=
+if "%delsas%" EQU "Y" goto :delsas
+if "%delsas%" EQU "y" goto :delsas
+if "%delsas%" EQU "n" goto :ADDSAS
+if "%delsas%" EQU "N" goto :ADDSAS
+echo Incorrect answer given... & timeout /t 5 & cls & goto :DeleteSas
+
+:delsas
+"%USERPROFILE%\AppData\Local\Programs\Python\Python310\python.exe" gen_sa_accounts.py --delete-sas "%PROJID%"
+
+:ADDSAS
 "%USERPROFILE%\AppData\Local\Programs\Python\Python310\python.exe" gen_sa_accounts.py --enable-services "%PROJID%"
 "%USERPROFILE%\AppData\Local\Programs\Python\Python310\python.exe" gen_sa_accounts.py --create-sas "%PROJID%"
 "%USERPROFILE%\AppData\Local\Programs\Python\Python310\python.exe" gen_sa_accounts.py --download-keys "%PROJID%"
