@@ -4,7 +4,7 @@
 # It will always go IN ORDER FROM LEFT TO RIGHT. So ExampleFirstDrive will copy to the rest.
 MirrorNames=( "01" "02" "03" "04" )
 
-# What you named your rclone drives prior to the number.
+# What you named your rcflone drives prior to the number.
 # This would look like: Group_Name-01, Group_Name-02, etc. in the config.
 MirrorNamePrefix="Group_Name-"
 
@@ -22,7 +22,7 @@ DestinationPath="/usr/LinuxServer/Downloads"
 StartFromLocal=0
 
 # DEPENDS ON StartFromLocal=1 to be enabled.
-# StartFromLocal=1 depends on this.
+# StartFromLocal=1 dependso n this.
 # Set this to a local path that you wish to start the syncing from.
 # Workflow will be like /usr/folder > drive-1, drive-1 > drive-2, and so on.
 StartingSource=""
