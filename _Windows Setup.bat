@@ -19,7 +19,7 @@ del "*.csv" /s /q >> SetupLog.txt
 del /s /q ".\accounts\*.json"  >> SetupLog.txt
 del /s /q ".\credentials\*.pickle"  >> SetupLog.txt
 del /s /q ".\*.pickle"  >> SetupLog.txt
-rem Install Properties-updates, i believe this was a key poiece i missed last time.
+rem Install Properties-updates, I believe this was a key piece I missed last time.
 move .\client*.json .\credentials.json >> SetupLog.txt
 if "%ERRORLEVEL%" == "1" (goto :CheckForCredentials) else (goto :Continue)
 
