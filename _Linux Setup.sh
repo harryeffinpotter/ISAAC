@@ -15,7 +15,7 @@ rm -rf ./*.csv >./SetupLOG.txt 2>&1
 rm -rf ./credentials/*.json  >./SetupLOG.txt 2>&1
 rm -rf ./credentials/*.pickle  >./SetupLOG.txt 2>&1
 rm -rf ./*.pickle  >./SetupLOG.txt 2>&1
-#Install Properties-updates, i believe this was a key poiece i missed last time.
+#Install Properties-updates, I believe this was a key piece I missed last time.
 echo "Installing all python prereqs, enter your password if it asks..."
 sudo apt install software-properties-common -y >./SetupLOG.txt 2>&1
 sudo apt update && upgrade -y >./SetupLOG.txt 2>&1
