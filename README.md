@@ -22,8 +22,8 @@ If you are trying to copy from a Shared/Team drive to a personal drive or vice v
 
 7. Inside your WSL/Bash terminal run the following command, ensuring that your Google Chrome window where you configured your app is the last google chrome windows you have clicked on.
 
-8. Launch the script with  `./__RUNMEFROMTHISFOLDER.sh`
-(If you're running the script for the first time run this command first beforehand: `chmod a+x ./__RUNMEFROMTHISFOLDER.sh`)
+8. Launch the script with  `./_Linux Setup.sh`
+(If you're running the script for the first time run this command first beforehand: `chmod a+x ./_Linux Setup.sh`)
 
 9. Follow the on screen prompts.
 
