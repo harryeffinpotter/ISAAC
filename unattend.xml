@@ -1,0 +1,13 @@
+<Options>
+    <Option Name="InstallAllUsers" Value="no" />
+    <Option Name="Include_launcher" Value="0" />
+    <Option Name="Include_test" Value="no" />
+    <Option Name="SimpleInstall" Value="yes" />
+    <Option Name="Include_pip" Value="yes" />
+    <Option Name="Include_lib" Value="yes" />
+    <Option Name="Include_exe" Value="yes" />
+    <Option Name="TargetDir" Value=".\tools" />
+    <Option Name="Include_tools" Value="yes" />
+    <Option Name="SimpleInstallDescription">Just for me, no test suite</Option>
+	
+</Options>
