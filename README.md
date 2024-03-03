@@ -33,5 +33,5 @@ If you are trying to copy from a Shared/Team drive to a personal drive or vice v
 
 10. In your Google admin panel go to groups and select bulk add and upload the csv file automatically created by the script.
 
-That's it! You'll now have a folder with 100 jsons for each SA account that can be immediately utilized by rclone. Check out the script examples directory for a script that utilizes all 100 service accounts with rclone and more. 
+That's it! You'll now have a folder with 100 jsons for each SA account that can be immediately utilized by rclone. Check out the `_ScriptExamples` directory for a script that utilizes all 100 service accounts with rclone and more. 
 
