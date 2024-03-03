@@ -26,6 +26,7 @@ If you are trying to copy from a Shared/Team drive to a personal drive or vice v
 
 *WSL/Linux:* `"./_Linux Setup.sh"`
 (If you're running the script for the first time run this command first beforehand: `chmod a+x ./_Linux Setup.sh`)
+
 *CMD:* `".\Windows Setup.bat"`
 
 9. Follow the on screen prompts.
