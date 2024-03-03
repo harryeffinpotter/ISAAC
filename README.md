@@ -6,7 +6,7 @@ Service Accounts are useful for those of us who wish to copy large amounts of da
 
 If you are trying to copy from a Shared/Team drive to a personal drive or vice versa this is not a good solution due to the fact that these service accounts can only carry up to 15GB of data each. However, when copying among Shared/Team drives since the storage never has to go to the SA's personal storage this will allow you to copy/transfer up to 75TB a day!
 
-<b>These scripts require Bash/WSL with v3.10 of Python already installed and configured. </b>
+<b>The linux script works with WSL as well as any Linux distr, both scripts require at least v3.10 of Python already installed, configured, and added to path(if on windows the python installer has an advanced option to add to path, be sure to select it). </b>
 
 1. Create a google group of which you are the OWNER.
 2. Create an app in the Google Cloud Console at this link - https://console.cloud.google.com/
