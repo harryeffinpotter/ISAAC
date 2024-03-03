@@ -20,10 +20,13 @@ If you are trying to copy from a Shared/Team drive to a personal drive or vice v
 
 ![image](https://user-images.githubusercontent.com/73411256/217772800-2557cf53-7842-4833-bc30-82fe49af037f.png)
 
-7. Inside your WSL/Bash terminal run the following command, ensuring that your Google Chrome window where you configured your app is the last google chrome windows you have clicked on.
+7. Clone this repository in your terminal (git is obviously required and must be added to path)
 
-8. Launch the script with  `./_Linux Setup.sh`
+8. `cd` into the cloned repo directory and run the following command, ensuring that the last browser window you have clicked on is the same window where you configured your app:
+
+*WSL/Linux:* `./_Linux Setup.sh`
 (If you're running the script for the first time run this command first beforehand: `chmod a+x ./_Linux Setup.sh`)
+*CMD:* `.\
 
 9. Follow the on screen prompts.
 
