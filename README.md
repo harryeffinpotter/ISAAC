@@ -22,7 +22,7 @@ If you are trying to copy from a Shared/Team drive to a personal drive or vice v
 
 7. Clone this repository in your terminal (git is obviously required and must be added to path)
 
-8. `cd` into the cloned repo directory and run the following command, ensuring that the last browser window you have clicked on is the same window where you configured your app:
+8. `cd` into the cloned repo directory and run the following command, ensuring that the last browser window you have clicked on is the same window where you configured your cloud console app:
 
 *WSL/Linux:* `"./_Linux Setup.sh"`
 (If you're running the script for the first time run this command first beforehand: `chmod a+x ./_Linux Setup.sh`)
